@@ -1,0 +1,25 @@
+// cc_library_static { // 生产一个静态库
+cc_library_shared { // 生产一个动态库
+    name: "libSsage", // 生成的模块名字
+    
+    cppflags: [ // c++编译参数
+        "-Wall",
+        "-Werror",
+    ],
+
+    srcs: [ // 源码路径
+        "src/*.cpp",
+    ],
+
+    local_include_dirs: [ // 头文件路径
+        "src/*.h",
+    ],
+
+    shared_libs: [ // 链接的共享库
+        "libgui",
+        "libui",
+        "libutils",
+        "libEGL",
+        "libGLESv3",
+    ],
+}
