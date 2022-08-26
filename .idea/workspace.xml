@@ -14,8 +14,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="407ccf1b-135d-430e-b663-e489b384e250" name="Changes" comment="Update README.md">
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+    <list default="true" id="407ccf1b-135d-430e-b663-e489b384e250" name="Changes" comment="Update README.md &amp; CMakeLists.txt">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +79,7 @@
       <updated>1661531492087</updated>
       <workItem from="1661531496459" duration="49000" />
       <workItem from="1661531694964" duration="67000" />
-      <workItem from="1661531822605" duration="2274000" />
+      <workItem from="1661531822605" duration="3146000" />
     </task>
     <task id="LOCAL-00001" summary="Update for 12">
       <created>1661536749376</created>
@@ -94,7 +95,21 @@
       <option name="project" value="LOCAL" />
       <updated>1661538281731</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update README.md &amp; CMakeLists.txt">
+      <created>1661538657846</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661538657846</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Update README.md &amp; CMakeLists.txt">
+      <created>1661538745004</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661538745004</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +129,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update for 12" />
     <MESSAGE value="Update README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update README.md" />
+    <MESSAGE value="Update README.md &amp; CMakeLists.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update README.md &amp; CMakeLists.txt" />
   </component>
 </project>
