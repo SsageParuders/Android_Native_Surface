@@ -94,3 +94,13 @@ MIT License
 > 我很喜欢开源项目<br>
 > 但是 如果你使用了我的项目 请最基本的 不要修改我的署名&签名<br>
 > 请保持最基本的尊重<br>
+
+## Donate
+
+- USTD
+  > TRC20 : TNsRvFsLZzbf5EL9buzpAKKJn757obstEa
+
+- ZFB & WX
+
+  <img width="170" alt="image" src="https://raw.githubusercontent.com/SsageParuders/RES/master/img/202208270304053.png">
+  <img width="200" alt="image" src="https://raw.githubusercontent.com/SsageParuders/RES/master/img/202208270301440.png">
