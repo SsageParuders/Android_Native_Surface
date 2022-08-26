@@ -6,7 +6,6 @@
 #include <linux/memfd.h>
 #include <linux/unistd.h>
 #endif
-
 #include <sys/types.h>
 
 #include <sys/mman.h>
@@ -16,57 +15,45 @@
 #include <string.h>
 #include <time.h>
 #include <unistd.h>
-
 #undef IMPL_MEMFD
 #undef IMPL_POSIX
 #undef IMPL_SHM_ANON
 #undef IMPL_SHM_MKSTEMP
 #undef IMPL_UNLINK_OR_CLOSE
-
 #ifdef __linux__
 #ifdef __NR_memfd_create
 #define IMPL_MEMFD
 #endif
 #endif
-
 #ifdef __FreeBSD__
 #define IMPL_SHM_ANON
 #endif
-
 #ifdef __HAIKU__
 #define IMPL_POSIX
 #endif
-
 #ifdef __NetBSD__
 #define IMPL_POSIX
 #endif
-
 #ifdef __APPLE__
 #ifdef __MACH__
 #define IMPL_POSIX
 #endif
 #endif
-
 #ifdef __sun
 #define IMPL_POSIX
 #endif
-
 #ifdef __DragonFly__
 #define IMPL_POSIX
 #endif
-
 #ifdef __OpenBSD__
 #define IMPL_SHM_MKSTEMP
 #endif
-
 #ifdef IMPL_POSIX
 #define IMPL_UNLINK_OR_CLOSE
 #endif
-
 #ifdef IMPL_SHM_MKSTEMP
 #define IMPL_UNLINK_OR_CLOSE
 #endif
-
 #ifdef IMPL_UNLINK_OR_CLOSE
 static int
 shm_unlink_or_close(const char *name, int fd)
@@ -82,7 +69,6 @@ shm_unlink_or_close(const char *name, int fd)
 	return fd;
 }
 #endif
-
 #ifdef IMPL_POSIX
 int
 shm_open_anon(void)
@@ -112,7 +98,6 @@ shm_open_anon(void)
 	return -1;
 }
 #endif
-
 #ifdef IMPL_SHM_MKSTEMP
 int
 shm_open_anon(void)
@@ -125,7 +110,6 @@ shm_open_anon(void)
 	return shm_unlink_or_close(name, fd);
 }
 #endif
-
 #ifdef IMPL_SHM_ANON
 int
 shm_open_anon(void)
@@ -133,7 +117,6 @@ shm_open_anon(void)
 	return shm_open(SHM_ANON, O_RDWR, 0);
 }
 #endif
-
 #ifdef IMPL_MEMFD
 int
 shm_open_anon(void)

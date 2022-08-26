@@ -7,11 +7,17 @@ set(ANDROID_PLATFORM 21) # 平台版本
 set(ANDROID_ABI arm64-v8a) # 设置目标构架 armeabi-v7a arm64-v8a x86 x86_64
 set(ANDROID_NDK /Users/hongqing/Library/Android/sdk/ndk/23.1.7779620) # 设置ndk路径
 set(CMAKE_TOOLCHAIN_FILE /Users/hongqing/Library/Android/sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake) # 设置交叉编译链的cmake配置
+
+# set(ANDROID_NDK C:/Users/13825/AppData/Local/Android/Sdk/ndk/25.1.8937393) # 设置ndk路径
+# set(CMAKE_TOOLCHAIN_FILE C:/Users/13825/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/cmake/android.toolchain.cmake) # 设置交叉编译链的cmake配置
 ##################### Android设置 #####################
 
 project(NativeSurface)
 
 set(CMAKE_CXX_STANDARD 17)
+# set(CMAKE_CXX_FLAGS
+#         "-fpass-plugin=/Users/hongqing/WorkSpace/SsagePass2/build/skeleton/libSkeletonPass.so"
+#         ) # 参数
 
 ##################### 输出文件重定向 #####################
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY
@@ -29,6 +35,7 @@ include_directories( # 设置全局头文件目录 使其他源码文件可在�
         ${CMAKE_CURRENT_SOURCE_DIR}/include/Android_touch
         ${CMAKE_CURRENT_SOURCE_DIR}/include/Android_shm
         ${CMAKE_CURRENT_SOURCE_DIR}/include/native_surface
+        ${CMAKE_CURRENT_SOURCE_DIR}/include/Android_draw
         )
 ##################### CMake头文件设置 #####################
 

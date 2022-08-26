@@ -1,8 +1,6 @@
 /*
- *
- *
- *
- *
+ * Codes from SsageParuders[https://github.com/SsageParuders]
+ * 代码由泓清提供
 */
 #include "aosp_surface.h"
 
