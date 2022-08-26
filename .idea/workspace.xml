@@ -14,30 +14,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="407ccf1b-135d-430e-b663-e489b384e250" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Android_Native_Surface.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/native_surface/native_surface.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/native_surface/utils.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SsageParuders.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Android_shm/shm_open_anon.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Android_shm/shm_open_anon.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Android_touch/touch.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Android_touch/touchInput.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/main.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/native_surface/aosp_10/native_surface_10.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/native_surface/aosp_10/native_surface_10.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/native_surface/aosp_11/native_surface_11.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/native_surface/aosp_11/native_surface_11.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/native_surface/aosp_12/native_surface_12.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/native_surface/aosp_12/native_surface_12.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/native_surface/native_surface.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/native_surface/native_surface.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/native_surface/utils.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/native_surface/utils.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outputs/arm64-v8a/NativeSurface" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/arm64-v8a/NativeSurface" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/aosp_native_surface/src/aosp_surface.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/res/aosp_native_surface/src/aosp_surface.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/aosp_native_surface/src/aosp_surface.h" beforeDir="false" afterPath="$PROJECT_DIR$/res/aosp_native_surface/src/aosp_surface.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Android_shm/shm_open_anon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Android_shm/shm_open_anon.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+    <list default="true" id="407ccf1b-135d-430e-b663-e489b384e250" name="Changes" comment="Update for 12">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,17 +44,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "CPPToolchains"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
@@ -98,8 +79,16 @@
       <updated>1661531492087</updated>
       <workItem from="1661531496459" duration="49000" />
       <workItem from="1661531694964" duration="67000" />
-      <workItem from="1661531822605" duration="463000" />
+      <workItem from="1661531822605" duration="2060000" />
     </task>
+    <task id="LOCAL-00001" summary="Update for 12">
+      <created>1661536749376</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661536749376</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,5 +104,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update for 12" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update for 12" />
   </component>
 </project>
