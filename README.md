@@ -39,7 +39,7 @@
 
 - By command line with CMake and Ninja
 
-    > Change The NDK PATH for CMakeLists.txt<br>
+    > Change The NDK PATH for [CMakeLists.txt](https://github.com/SsageParuders/Android_Native_Surface/blob/e578428618899ec3bb1f4dcebba985a731b04606/CMakeLists.txt#L8)<br>
       Make sure you can use cmake and ninja on your path.
 
     ```bash
@@ -48,11 +48,14 @@
     cmake ../
     cmake --build .
   ```
-![Example](https://raw.githubusercontent.com/SsageParuders/RES/master/img/202208270207345.png)
+
+   <img width="681" alt="image" src="https://raw.githubusercontent.com/SsageParuders/RES/master/img/202208270207345.png">
 
 - Open this Project with CLion
     
-  - Then  
+  - Then Make Sure Your Toolchains is right for NDK.
+  - Change The NDK PATH for [CMakeLists.txt](https://github.com/SsageParuders/Android_Native_Surface/blob/e578428618899ec3bb1f4dcebba985a731b04606/CMakeLists.txt#L8)
+  - Just build it.
 
 ### ToDo List
 

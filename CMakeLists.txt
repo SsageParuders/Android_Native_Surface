@@ -7,9 +7,6 @@ set(ANDROID_PLATFORM 21) # 平台版本
 set(ANDROID_ABI arm64-v8a) # 设置目标构架 armeabi-v7a arm64-v8a x86 x86_64
 set(ANDROID_NDK /Users/hongqing/Library/Android/sdk/ndk/23.1.7779620) # 设置ndk路径
 set(CMAKE_TOOLCHAIN_FILE /Users/hongqing/Library/Android/sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake) # 设置交叉编译链的cmake配置
-
-# set(ANDROID_NDK C:/Users/13825/AppData/Local/Android/Sdk/ndk/25.1.8937393) # 设置ndk路径
-# set(CMAKE_TOOLCHAIN_FILE C:/Users/13825/AppData/Local/Android/Sdk/ndk/25.1.8937393/build/cmake/android.toolchain.cmake) # 设置交叉编译链的cmake配置
 ##################### Android设置 #####################
 
 project(NativeSurface)
