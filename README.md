@@ -1,8 +1,14 @@
 ## Android_Native_Surface
 
+
 > This is a Demo for Android Native Surface <br>
 > Made by SsageParuders(泓清)<br>
-> Had supported for Android 10~12
+> Had supported for Android 10~12<br>
+
+> If you had used code from this repository.<br>
+> I hope you can show this repository's address.<br>
+> 如果你有使用到这个仓库的代码<br>
+> 希望你能标明仓库的开源地址<br>
 
 ---
 
@@ -104,3 +110,9 @@ MIT License
 
   <img width="170" alt="image" src="https://raw.githubusercontent.com/SsageParuders/RES/master/img/202208270304053.png">
   <img width="200" alt="image" src="https://raw.githubusercontent.com/SsageParuders/RES/master/img/202208270301440.png">
+
+## Connect
+
+[TG Chat Group](https://t.me/+9Q9_NQHuAotlMjFl)
+
+[TG Channel](https://t.me/SsageParudersHack)
