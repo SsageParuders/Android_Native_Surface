@@ -38,51 +38,56 @@ string exec(string command) {
 }
 
 int init_egl(int _screen_x,int _screen_y, bool log){
-    display = eglGetDisplay(EGL_DEFAULT_DISPLAY);
+    // 创建与本地窗口系统的连接
+    display = eglGetDisplay(EGL_DEFAULT_DISPLAY); // 实际显示设备的抽象
     if (display == EGL_NO_DISPLAY) {
+        // 如果创建之后还是 EGL_NO_DISPLAY ，表示创建失败
         printf("eglGetDisplay error=%u\n", glGetError());
         return -1;
     }
     if(log)printf("eglGetDisplay ok\n");
-    EGLint *version = new EGLint[2];
+    // 初始化 EGL 方法
+    EGLint *version = new EGLint[2]; //// EGL 的主次版本号
     if (!eglInitialize(display, &version[0], &version[1])) {
         printf("eglInitialize error=%u\n", glGetError());
         return -1;
     }
     if(log)printf("eglInitialize ok\n");
+    // 确定渲染表面的配置信息
     const EGLint attribs[] = {EGL_BUFFER_SIZE, 32, EGL_RED_SIZE, 8, EGL_GREEN_SIZE, 8, EGL_BLUE_SIZE, 8, EGL_ALPHA_SIZE, 8, EGL_DEPTH_SIZE, 8, EGL_STENCIL_SIZE, 8, EGL_RENDERABLE_TYPE, EGL_OPENGL_ES3_BIT, EGL_SURFACE_TYPE, EGL_WINDOW_BIT, EGL_NONE};
     EGLint num_config;
-    if (!eglGetConfigs(display, nullptr, 1, &num_config)) {
-        printf("eglGetConfigs  error =%u\n", glGetError());
-        return -1;
-    }
     if(log)printf("num_config=%d\n", num_config);
     if (!eglChooseConfig(display, attribs, &config, 1, &num_config)) {
+        // 没有找到符合要求的 EGLConfig 配置
         printf("eglChooseConfig  error=%u\n", glGetError());
         return -1;
     }
     if(log)printf("eglChooseConfig ok\n");
+    // 创建渲染上下文
     int attrib_list[] = {EGL_CONTEXT_CLIENT_VERSION, 3, EGL_NONE};
-    context = eglCreateContext(display, config, EGL_NO_CONTEXT, attrib_list);
+    context = eglCreateContext(display, config, EGL_NO_CONTEXT, attrib_list); // 存储 OpenGL ES绘图的一些状态信息
     if (context == EGL_NO_CONTEXT) {
         printf("eglCreateContext  error = %u\n", glGetError());
         return -1;
     }
     if(log)printf("eglCreateContext ok\n");
+    // 创建渲染表面
     void* sy = get_createNativeWindow(); // 适配10-12安卓版本
     createNativeWindow = (NativeWindowType (*)(const char *, uint32_t, uint32_t))(sy);
     native_window = createNativeWindow("Ssage",_screen_x, _screen_y);
-    surface = eglCreateWindowSurface(display, config, native_window, nullptr);
+    surface = eglCreateWindowSurface(display, config, native_window, nullptr); // 用来存储图像的内存区域
     if (surface == EGL_NO_SURFACE) {
         printf("eglCreateWindowSurface  error = %u\n", glGetError());
         return -1;
     }
     if(log)printf("eglCreateWindowSurface ok\n");
+    // 绑定上下文
     if (!eglMakeCurrent(display, surface, surface, context)) {
         printf("eglMakeCurrent  error = %u\n", glGetError());
         return -1;
     }
     if(log)printf("eglMakeCurrent ok\n");
+    // 交换缓冲，进行显示  EGL14.eglSwapBuffers(mEGLDisplay, mEGLSurface);
     return 1;
 }
 
