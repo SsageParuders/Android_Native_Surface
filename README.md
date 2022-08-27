@@ -7,8 +7,10 @@
 
 > If you had used code from this repository.<br>
 > I hope you can show this repository's address.<br>
+> Please maintain basic respect for open source.<br>
 > 如果你有使用到这个仓库的代码<br>
 > 希望你能标明仓库的开源地址<br>
+> 请对开源保持最基本的尊重<br>
 
 ---
 
@@ -96,8 +98,7 @@ MIT License
 > Don't change my signature for this Project if you had used it.<br>
 > Please maintain basic respect<br>
 
-> MIT 协议是一个不受约束的宽松协议<br>
-> 我很喜欢开源项目<br>
+> MIT 协议是一个不受约束的宽松协议 我很喜欢开源项目<br>
 > 但是 如果你使用了我的项目 请最基本的 不要修改我的署名&签名<br>
 > 请保持最基本的尊重<br>
 
