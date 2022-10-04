@@ -26,36 +26,41 @@
 
 // User libs
 //#include <touch.h>
-#include <native_surface.h>
+#include "native_surface/extern_function.h"
 #include <imgui.h>
 #include <font/Font.h>
 #include <imgui_internal.h>
 #include <backends/imgui_impl_opengl3.h>
 #include <backends/imgui_impl_android.h>
+
 // namespace
 using namespace std;
 using namespace std::chrono_literals;
-extern void *handle;// 动态库方案
-extern EGLDisplay display;
-extern EGLConfig config;
-extern EGLSurface surface;
-extern ANativeWindow *native_window;
-extern ANativeWindow *(*createNativeWindow)(const char *surface_name ,uint32_t screen_width ,uint32_t screen_height);
-extern EGLContext context;
-struct Screen {
-    float ScreenX;
-    float ScreenY;
-};
-extern Screen full_screen;
-extern int Orientation;
-extern int screen_x, screen_y;
-extern int init_screen_x, init_screen_y;
+//extern EGLDisplay display;
+//extern EGLConfig config;
+//extern EGLSurface surface;
+//extern ANativeWindow *native_window;
+extern ExternFunction externFunction;
+//extern EGLContext context;
+// 屏幕信息
+extern MDisplayInfo displayInfo;
 extern bool g_Initialized;
+
 // Func
-string exec(string command);
-int init_egl(int _screen_x,int _screen_y, bool log = false);
+bool init_egl(uint32_t _screen_x, uint32_t _screen_y, bool log = false);
+
+bool initDraw(uint32_t _screen_x, uint32_t _screen_y, bool log = false);
+
+bool initDraw(bool log = false);
+
+bool ImGui_init();
+
 void screen_config();
-void ImGui_init();
-void tick();
+
+void drawBegin();
+
+void drawEnd();
+
 void shutdown();
+
 #endif //NATIVESURFACE_DRAW_H

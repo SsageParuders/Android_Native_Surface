@@ -1,0 +1,4 @@
+../../../frameworks/native/opengl/include
+../../../frameworks/native/libs/gui/include
+../../../system/core/libutils/include
+../../../system/core/libsystem/include

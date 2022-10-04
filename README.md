@@ -34,6 +34,14 @@
 
 ---
 
+### Screenshot
+- Screen record
+  <br> <br>
+  <img width="300" alt="image" src="gif/record.gif">
+- Native Surface
+  <br> <br>
+  <img width="300" alt="image" src="gif/imgui.gif">
+
 ### outputs 
 
 > The out file for Demo.<br>

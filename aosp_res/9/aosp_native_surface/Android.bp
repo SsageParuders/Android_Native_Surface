@@ -1,0 +1,47 @@
+// cc_library_static { // 生产一个静态库
+cc_library_shared { // 生产一个动态库
+    name: "libSsage", // 生成的模块名字
+    
+    cppflags: [ // c++编译参数
+        "-Wall",
+        "-Werror",
+        "-Wno-unused-parameter"
+    ],
+
+    srcs: [ // 源码路径
+        "src/aosp_surface.cpp",
+        "src/aosp_record.cpp",
+     
+    ],
+
+    local_include_dirs: [ // 头文件路径
+        "src/include",
+    ],
+    
+
+    shared_libs: [ // 链接的共享库
+        "libgui",
+        "libui",
+        "libutils",
+        "libEGL",
+        "libGLESv3",
+        "libstagefright",
+        "libmedia",
+        "libmediandk",
+        "libmedia_omx",
+        "libutils",
+        "libbinder",
+        "libstagefright_foundation",
+        "libjpeg",
+        "libcutils",
+        "liblog",
+        "libGLESv2",
+    ],
+
+    include_dirs: [
+        "frameworks/av/media/libstagefright",
+        "frameworks/av/media/libstagefright/include",
+        "frameworks/native/include/media/openmax",
+    ],
+
+}
