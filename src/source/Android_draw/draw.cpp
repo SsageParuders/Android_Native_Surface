@@ -30,7 +30,7 @@ bool initDraw(uint32_t _screen_x, uint32_t _screen_y, bool log) {
 
 bool init_egl(uint32_t _screen_x, uint32_t _screen_y, bool log) {
     native_window = externFunction.createNativeWindow("Ssage",
-                                                      _screen_x, _screen_y, false);
+                                                      _screen_x, _screen_y, true);
     ANativeWindow_acquire(native_window);
     display = eglGetDisplay(EGL_DEFAULT_DISPLAY);
     if (display == EGL_NO_DISPLAY) {
